@@ -139,7 +139,7 @@ $(document).ready(function () {
     $(".main-menu ul li a").on("click", function (e) {
         e.preventDefault();
         $($elem).stop().animate({
-            scrollLeft: $($(this).attr("href")).offset().left + $elem.scrollLeft() - 100
+            scrollLeft: $($(this).attr("href")).offset().left + $elem.scrollLeft() + 40
         },3000 ,'easeInOutExpo');
     });
     $(".mobile-area ul li a").on("click", function (e) {
@@ -934,6 +934,18 @@ $(document).ready(function () {
             scrollTop: $("#content-area-div-3").offset().top + $elem.scrollTop()
         },2000 ,'easeInOutExpo');
     });
+    $(".fifth-area p").on('click', function (e) {
+        e.preventDefault();
+        $($elem).animate({
+            scrollLeft: $("#content-area-div-3").offset().left + $elem.scrollLeft()
+        },2000 ,'easeInOutExpo');
+    });
+    $(".section-text-area h2").on('click', function (e) {
+        e.preventDefault();
+        $($elem).animate({
+            scrollLeft: $("#content-area-div-8").offset().left + $elem.scrollLeft()
+        },2000 ,'easeInOutExpo');
+    });
     $(".cloud-content h2").on('click', function (e) {
         e.preventDefault();
         if(detectmob()){
@@ -948,10 +960,22 @@ $(document).ready(function () {
             scrollTop: $("#content-area-div-7").offset().top + $elem.scrollTop()
         },2000 ,'easeInOutExpo');
     });
+    $(".third-6 p").on('click', function (e) {
+        e.preventDefault();
+        $($elem).animate({
+            scrollLeft: $("#content-area-div-7").offset().left + $elem.scrollLeft()
+        },2000 ,'easeInOutExpo');
+    });
     $(".section-message-area p.results").on('click', function (e) {
         e.preventDefault();
         $($elem).animate({
             scrollTop: $("#content-area-div-8").offset().top + $elem.scrollTop() + 100
+        },2000 ,'easeInOutExpo');
+    });
+    $(".cloud-content h2").on('click', function (e) {
+        e.preventDefault();
+        $($elem).animate({
+            scrollLeft: $("#content-area-div-5").offset().left + $elem.scrollLeft()
         },2000 ,'easeInOutExpo');
     });
 
@@ -959,6 +983,13 @@ $(document).ready(function () {
         $(this).addClass('hover');
     },function () {
         $(this).removeClass('hover');
+    });
+    $(".vertical.database-icon").hover(function () {
+        $(this).find('.flipper').css('transform','rotateX(-180deg)');
+    },function () {
+        setTimeout(function () {
+        $(this).find('.flipper').css('transform','rotateX(0)');
+        },500)
     });
 
     $(".image-group p").on('click', function (e) {
@@ -974,8 +1005,15 @@ $(document).ready(function () {
             },2000 ,'easeInOutExpo');
         }
     });
-    $('.left-nav-arrow img').on('click', function (e) {
+    $('.left-nav-arrow-container').on('click', function (e) {
         e.preventDefault();
+        leftarrowpress();
+    });
+    $('.right-nav-arrow-container').on('click', function (e) {
+        e.preventDefault();
+        rightarrowpress();
+    });
+    function leftarrowpress() {
         var divToGo;
         switch(scrollposition){
             case 1:
@@ -1009,9 +1047,8 @@ $(document).ready(function () {
         $($elem).stop().animate({
             scrollLeft: divToGo
         },2000 ,'easeInOutExpo');
-    });
-    $('.right-nav-arrow img').on('click', function (e) {
-        e.preventDefault();
+    }
+    function rightarrowpress() {
         var divToGo;
         switch(scrollposition){
             case 1:
@@ -1044,7 +1081,7 @@ $(document).ready(function () {
         $($elem).stop().animate({
             scrollLeft: divToGo
         },2000 ,'easeInOutExpo');
-    });
+    }
     var flipper = 0;
     $(".vertical.database-icon .flipper").on('click', function () {
         if(detectmob()){
@@ -1058,5 +1095,20 @@ $(document).ready(function () {
             }
         }
     })
+    $(function(){
+        $('html').keydown(function(e){
+            switch (e.keyCode){
+                case 39:
+                    rightarrowpress();
+                    break;
+                case 37:
+                    leftarrowpress();
+                    break;
+                default:
+                    break;
+            }
+
+        });
+    });
 
 });

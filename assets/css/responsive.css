@@ -77,6 +77,240 @@
         /*animation: none;*/
     /*}*/
 /*}*/
+@media (min-height: 630px) and (max-height: 768px) {
+    .logo-area {
+        height: 118px;
+        width: 151px;
+    }
+
+    .logo-area img {
+        width: 155px;
+    }
+
+    .content-area {
+        margin-left: 50px;
+    }
+
+    .logo-icon {
+        margin-left: 74px;
+    }
+
+    .icon-container-1 .inner-circle {
+        width: 75px;
+        height: 75px;
+    }
+
+    .icon-container-1 .inner-circle img {
+        width: 83px;
+    }
+
+    .left-fixed-menu {
+        padding: 28px 7px 0 25px;
+    }
+
+    .icon-container-2 .inner-circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-container-2 .inner-circle svg {
+        width: 27px;
+    }
+
+    .icon-3 .inner-circle svg, .icon-4 .inner-circle svg {
+        width: 20px;
+    }
+
+    .top-header ul {
+        width: 750px;
+    }
+
+    .top-header ul li {
+        font-size: 15px;
+    }
+
+    .text-container h1 {
+        font-size: 34px;
+    }
+
+    .content-section p {
+        font-size: 15px;
+        line-height: 1.5em;
+    }
+
+    .c-dashed-line__path {
+        top: 123px;
+    }
+
+    .button-area span {
+        font-size: 22px;
+        padding: 14px 12px 9px 12px;
+    }
+
+    .second-area p {
+        font-size: 26px;
+    }
+
+    .content-area-div-2 {
+        padding-top: 0;
+        padding-bottom: 48px;
+    }
+    .cloud-content h1 {
+        font-size: 34px;
+    }
+    .cloud-content p {
+        font-size: 15px;
+    }
+    .robot-cloud > div.robot img.robotmain{
+        width: 288px;
+        right: 65px;
+        top: 73px;
+    }
+    .robot-cloud > div.robot img.robotcloud{
+        width: 687px;
+        bottom: 189px;
+        left: 62px;
+    }
+    @keyframes animatecloud {
+        to{
+            bottom: 121px;
+            left: 26px;
+            opacity: 1;
+        }
+    }
+    @keyframes animaterobot {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 1;
+            right: 38px;
+            top: 19px;
+        }
+    }
+    @keyframes fadeout-robot {
+        0%{
+            opacity: 1;
+            right: 38px;
+            top: 19px;
+        }
+        99%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            right: 65px;
+            top: 73px;
+        }
+    }
+    .content-area-div-3 {
+        margin: 0px 30px 143px 290px;
+    }
+    .content-area-div-5 {
+        margin-top: 0;
+    }
+    .first-sec{
+        padding: 0 21px 67px 53px;
+    }
+    .second-sec{
+        padding-top: 94px;
+    }
+    .third-sec{
+        padding-top: 0;
+    }
+    .second-sec h1 {
+        font-size: 34px;
+    }
+    .second-sec p {
+        font-size: 15px;
+    }
+    .connector-9 {
+        width: 1413px;
+        bottom: 68px;
+        left: -280px;
+    }
+    .content-area-div-6{
+        padding-top: 42px;
+    }
+    .second-6 h1 {
+        font-size: 34px;
+    }
+    .second-6 p {
+        font-size: 15px;
+    }
+    .third-6 {
+        padding-top: 37px;
+    }
+    .content-area-div-7{
+        margin-top: 0;
+    }
+    .section-text-area h1{
+        font-size: 34px;
+    }
+    .section-text-area p{
+        font-size: 15px;
+    }
+    .section-text-area{
+        justify-content: unset;
+    }
+    .messages-area {
+        padding-bottom: 41px;
+        height: 471px;
+    }
+    .messages-area .message p{
+        font-size: 14px;
+    }
+    .connector-11 {
+        width: 799px;
+        top: -170px;
+        right: -101px;
+    }
+    .content-area-div-8 .container {
+         margin-top: 0;
+        margin-left: 68px;
+    }
+    .first-content-area-8 {
+        padding-top: 48px;
+    }
+    .first-content-area-8 h1{
+        font-size: 34px;
+        line-height: 41px;
+    }
+    .first-content-area-8 p{
+        font-size: 15px;
+    }
+    .content-area-div-8 .container > img{
+        top: -239px;
+    }
+    .connector-12 {
+        position: absolute;
+        width: 127px;
+        z-index: -1;
+        bottom: 94px;
+    }
+    .contact-us-icon{
+        padding-top: 31px;
+    }
+    .icon-container-2 p {
+        font-size: 11px;
+    }
+    .image-group p {
+        left: 390px;
+        bottom: 61px;
+    }
+    .main-icon-div {
+        height: 632px;
+    }
+    .content-area-last {
+        padding-top: 65px;
+    }
+    .form-area {
+        padding-top: 75px;
+    }
+    .desktop-background{
+        width: 13500px;
+    }
+}
 @media (max-width: 1024px) and (min-width: 768px) {
     html,body{
         overflow: hidden;

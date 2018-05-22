@@ -73,6 +73,7 @@ p, h1, h2, h3, span, a{
 }
 .left-nav-arrow-container{
     width: 116px;
+    cursor: pointer;
 }
 @keyframes left-arrow-hover-back {
     from{
@@ -141,6 +142,7 @@ p, h1, h2, h3, span, a{
 }
 .right-nav-arrow-container{
     width: 116px;
+    cursor: pointer;
 }
 @keyframes right-arrow-hover-back {
     from{
@@ -569,9 +571,9 @@ p, h1, h2, h3, span, a{
     flex-direction: row;
     justify-content: space-evenly;
 }
-.vertical.database-icon:hover .flipper {
-    transform: rotateX(-180deg);
-}
+/*.vertical.database-icon:hover .flipper {*/
+    /*transform: rotateX(-180deg);*/
+/*}*/
 .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
@@ -691,6 +693,7 @@ p, h1, h2, h3, span, a{
     margin-top: 96px;
     margin-left: 25px;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 .third-area .database-icon{
     width: 276px;
@@ -853,6 +856,9 @@ p, h1, h2, h3, span, a{
     font-family: bebasNeue;
     font-weight: 100;
     letter-spacing: 3px;
+    cursor: pointer;
+    width: 300px;
+    margin: 0 auto;
 }
 .cloud-content{
     margin-top: 125px;
@@ -862,7 +868,8 @@ p, h1, h2, h3, span, a{
 .content-area-div-5{
     margin-top: 60px;
     background: url("../img/background-bot.png") no-repeat left top;
-    padding-left: 131px;
+    margin-left: 81px;
+    padding-left: 50px;
 }
 .content-area-div-5 .container{
     display: flex;
@@ -1088,6 +1095,7 @@ p, h1, h2, h3, span, a{
     color: #ffffff;
     letter-spacing: 2px;
     padding-left: 80px;
+    cursor: pointer;
 }
 .third-6 img {
     position: relative;
@@ -1245,6 +1253,7 @@ p, h1, h2, h3, span, a{
     font-size: 27px;
     font-family: bebasNeue;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 .section-message-area{
     display: flex;
@@ -1540,6 +1549,7 @@ p, h1, h2, h3, span, a{
     bottom: 41px;
     color: #ffffff;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 .percentage-area{
     display: flex;
