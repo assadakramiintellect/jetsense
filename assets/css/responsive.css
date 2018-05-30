@@ -122,7 +122,7 @@
     }
 
     .top-header ul {
-        width: 750px;
+        width: 874px;
     }
 
     .top-header ul li {
@@ -309,6 +309,16 @@
     }
     .desktop-background{
         width: 13500px;
+    }
+    .section-message-area .img-main2 {
+        bottom: 39px;
+    }
+    .icon-section-area > p{
+        font-size: 11px;
+        padding-top: 26px;
+    }
+    .icon-section-area > div p {
+        font-size: 11px;
     }
 }
 @media (max-width: 1024px) and (min-width: 768px) {

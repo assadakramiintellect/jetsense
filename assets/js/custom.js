@@ -152,6 +152,9 @@ $(document).ready(function () {
             case "#content-area-div-8":
                 scrollval = -500;
                 break;
+            case "#content-area-div-9":
+                scrollval = -850;
+                break;
             default:
                 scrollval = 50;
                 break;
@@ -987,9 +990,10 @@ $(document).ready(function () {
     $(".vertical.database-icon").hover(function () {
         $(this).find('.flipper').css('transform','rotateX(-180deg)');
     },function () {
+        var that = this;
         setTimeout(function () {
-        $(this).find('.flipper').css('transform','rotateX(0)');
-        },500)
+            $(that).find('.flipper').css('transform','rotateX(0)');
+        }, 5000)
     });
 
     $(".image-group p").on('click', function (e) {

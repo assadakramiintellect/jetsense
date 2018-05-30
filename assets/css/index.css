@@ -174,7 +174,7 @@ p, h1, h2, h3, span, a{
     border-bottom-right-radius: 9px;
     color: #ffffff;
     position: relative;
-    width: 810px;
+    width: 919px;
 }
 .top-header .menu-opener{
     background: -moz-linear-gradient(top, rgba(14,84,135,1) 0%, rgba(11,70,112,1) 33%, rgba(11,67,109,1) 100%);
@@ -254,7 +254,7 @@ p, h1, h2, h3, span, a{
     z-index: 4;
     position: relative;
     text-align: center;
-    width: 880px;
+    width: 983px;
     float: left;
 }
 .icon-container {
@@ -606,9 +606,7 @@ p, h1, h2, h3, span, a{
 }
 .back {
     transform: rotateY(180deg);
-    background: -webkit-linear-gradient(45deg, rgba(99,18,139,1) 0%,rgba(147,31,148,1) 50%,rgba(190,42,157,1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(191,43,157,1) 0%,rgba(191,43,157,1) 0%,rgba(147,31,148,1) 51%,rgba(99,18,139,1) 100%);
-    background: linear-gradient(45deg, rgba(191,43,157,1) 0%,rgba(191,43,157,1) 0%,rgba(147,31,148,1) 51%,rgba(99,18,139,1) 100%);
+    background: green;
     border: 6px solid #ffffff;
 }
 .database-icon img, .database-icon object{
@@ -1308,6 +1306,16 @@ p, h1, h2, h3, span, a{
     font-size: 16px;
     font-weight: bold;
     max-width: 308px;
+}
+.messages-area .message .messagess{
+    padding: 17px 31px 17px 21px;
+    border-radius: 23px;
+    margin: 0 0 10px 0;
+    font-family: proximaNovaRegular;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 308px;
+    background: #ffffff;
 }
 
 .messages-area .message:nth-child(even) p{
