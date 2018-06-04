@@ -988,11 +988,20 @@ $(document).ready(function () {
         $(this).removeClass('hover');
     });
     $(".vertical.database-icon").hover(function () {
+        var that = this;
         $(this).find('.flipper').css('transform','rotateX(-180deg)');
+        setTimeout(function () {
+            $(that).find(".front").hide();
+            $(that).find(".back").show();
+        },200);
     },function () {
         var that = this;
         setTimeout(function () {
             $(that).find('.flipper').css('transform','rotateX(0)');
+            setTimeout(function () {
+                $(that).find(".front").show();
+                $(that).find(".back").hide();
+            },200);
         }, 5000)
     });
 

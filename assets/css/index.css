@@ -15,6 +15,7 @@ p, h1, h2, h3, span, a{
 @font-face {
     font-family: bebasNeue;
     src: url('../fonts/BebasNeue.otf');
+    src: url('../fonts/BebasNeue-Regular.ttf');
 }
 @font-face {
     font-family: proximaNovaRegular;
@@ -41,9 +42,9 @@ p, h1, h2, h3, span, a{
 }
 .desktop-background{
     position: absolute;
-    height: -webkit-fill-available;
+    height: 100%;
     z-index: -9999999999;
-    width: fit-content;
+    width: 14000px;
 }
 .mobile-background{
     position: absolute;
@@ -57,6 +58,7 @@ p, h1, h2, h3, span, a{
 .left-fixed-menu{
     padding: 136px 72px 0 25px;
     width: 300px;
+    min-width: 144px;
     align-self: center;
 }
 .left-nav-arrow, .left-nav-arrow-container{
@@ -67,7 +69,7 @@ p, h1, h2, h3, span, a{
     z-index: 2;
 }
 .left-nav-arrow{
-    background-color: #093351a8;
+    background-color: rgba(9, 40, 78, 0.79);
     text-align: center;
     animation: left-arrow-hover-back 0.5s forwards;
 }
@@ -136,7 +138,7 @@ p, h1, h2, h3, span, a{
     z-index: 2;
 }
 .right-nav-arrow{
-    background-color: #093351a8;
+    background-color: rgba(9, 40, 78, 0.79);
     text-align: center;
     animation: right-arrow-hover-back 0.5s forwards;
 }
@@ -538,7 +540,7 @@ p, h1, h2, h3, span, a{
 }
 .content-area-div-2{
     padding-top: 61px;
-    padding-left: 120px;
+    padding-left: 12px;
     background: url(../img/content-area-2-background.png) no-repeat;
     height: 100%;
     display: flex;
@@ -549,7 +551,7 @@ p, h1, h2, h3, span, a{
     display: flex;
     justify-content: center;
     height: 500px;
-    width: auto;
+    min-width: 1180px;
 }
 .database-icon{
     border-radius: 50%;
@@ -585,29 +587,31 @@ p, h1, h2, h3, span, a{
     transform: rotateX(180deg);
 }
 .front, .back {
-    backface-visibility: hidden;
+    transform: perspective(200px) rotateX(0deg);
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     border-radius: 50%;
-}
-.database-icon:hover .flipper, .database-icon.hover .flipper {
-    transform: rotateY(180deg);
+    width: 269px;
 }
 .front {
     z-index: 2;
-    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: perspective(200px) rotateX(0deg);
     background: #f4f4f4;
     -webkit-box-shadow: 0px 29px 101px 2px rgba(0,0,0,0.2);
     box-shadow: 0px 29px 101px 2px rgba(0,0,0,0.2);
     border: 6px solid transparent;
 }
 .back {
-    transform: rotateY(180deg);
+    z-index: 1;
+    transform: perspective(200px) rotateX(180deg);
     background: green;
     border: 6px solid #ffffff;
+    display: none;
 }
 .database-icon img, .database-icon object{
     pointer-events: none;
@@ -915,7 +919,7 @@ p, h1, h2, h3, span, a{
     min-width: 368px;
 }
 .third-sec object{
-    width: 368px;
+    min-width: 368px;
     position: relative;
     right: 50px;
     /*display: none;*/
@@ -1010,6 +1014,7 @@ p, h1, h2, h3, span, a{
     justify-content: center;
     padding-bottom: 57px;
     padding-left: 10px;
+    min-width: 488px;
 }
 .second-6 h1{
     font-size: 42px;
@@ -1127,6 +1132,7 @@ p, h1, h2, h3, span, a{
 .icon-section-area > img{
     position: absolute;
     top: 111px;
+    left: 96px;
 }
 .icon-section-area > div{
     padding: 11px 11px 0 11px;
@@ -1562,7 +1568,7 @@ p, h1, h2, h3, span, a{
 .percentage-area{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .percentage-area h1{
     font-size: 42px;
@@ -1912,6 +1918,8 @@ p, h1, h2, h3, span, a{
     width: 69px;
     position: absolute;
     color: #8eea2c;
+    top: 13px;
+    left: 26px;
 }
 
 /*  Animations  */
