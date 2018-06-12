@@ -277,6 +277,9 @@
         font-size: 34px;
         line-height: 41px;
     }
+    .percentage h1{
+        padding-top: 27px;
+    }
     .first-content-area-8 p{
         font-size: 15px;
     }

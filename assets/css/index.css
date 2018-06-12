@@ -1304,6 +1304,10 @@ p, h1, h2, h3, span, a{
     justify-content: flex-end;
     color: white;
 }
+.messages-area .message.messagecustom{
+    justify-content: flex-start;
+    color: white;
+}
 .messages-area .message p{
     padding: 17px 31px 17px 21px;
     border-radius: 23px;
@@ -1330,6 +1334,10 @@ p, h1, h2, h3, span, a{
 .messages-area .message:nth-child(odd) p{
     background: #0084ff;
     text-align: right;
+}
+.messages-area .message.messagecustom p{
+    background: #ffffff;
+    color: #000;
 }
 .animateMessageLeft{
     animation: animateMessageLeft 1s forwards;
@@ -1572,7 +1580,7 @@ p, h1, h2, h3, span, a{
 }
 .percentage-area h1{
     font-size: 42px;
-    padding-top: 27px;
+    padding-top: 21px;
     margin-bottom: 0;
     padding-bottom: 38px;
     margin-top: 0;

@@ -763,8 +763,14 @@ $(document).ready(function () {
             if((val%2) === 0){
                 $singleMessage.addClass("animateMessageLeft test2");
             }else{
-                $singleMessage.addClass("animateMessageRight test2");
+                if($singleMessage.hasClass("messagecustom")){
+                    $singleMessage.addClass("animateMessageLeft test2");
+                }
+                else{
+                    $singleMessage.addClass("animateMessageRight test2");
+                }
             }
+
             $(".right-side-area-2 .messages-area .message:nth-child("+(val-1)+")").removeClass("animateMessageLeft");
             $(".right-side-area-2 .messages-area .message:nth-child("+(val-1)+")").removeClass("animateMessageRight");
             if(val > 7){
